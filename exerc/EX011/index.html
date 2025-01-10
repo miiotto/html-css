@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIDIAS</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <P>Clique para abrir a Imagem</P>
+    <picture>
+        <source media="(max-width: 750px)" srcset="../img/img_p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="../img/img_m.jpg" type="image/jpg">
+        <img src="../img/img_g.jpg" alt="Imagem Flexivel">
+
+    </picture>
+    <h1>AUDIO</h1>
+    <p>Vamos inserir audio</p>
+    <!-- <audio src="midea/One Day At A Time.mp3" controls autoplay></audio>  *** não usavel-->
+    <audio preload="metadata" autoplay controls
+         <source src="midea/One Day At A Time.mp3" type="audio/mpeg">
+        <source src="midea/One Day At A Time.ogg" type="audio/ogg">
+        <source src="midea/One Day At A Time.wav" type="audio/wav">
+        <p>Infelizmente não deu. <a href="midea/One Day At A Time.mp3">Clique para baixar</a></p>
+    </audio>
+    <h1>Videos</h1>
+    <h1>Carregando Videos no seu site</h1>
+    
+</body>
+</html>
