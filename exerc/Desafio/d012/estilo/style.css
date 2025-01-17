@@ -71,15 +71,35 @@ section.normal {
     color: rgb(19, 19, 19);
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.imagem {
     background-color: rgba(9, 9, 9, 0.742);
     color: rgb(252, 251, 251);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display: inline-block;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.245);
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.377);
+    text-shadow: 1px 1px 0px black;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.648);
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+   
 }
 
 footer {
