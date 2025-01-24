@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form method="GET" autocomplete="on">
+
+        <fieldset>
+
+            <legend>
+                Forms OUTUPUT
+            </legend>
+            
+            <p>
+                <label for="iano">Em que ano vc Nasceu?</label>
+                <input type="number" name="ano" id="iano" mim="1900" max="2025" oninput="calIdade()">
+                
+            </p>
+
+            <p>
+                <label for="iidade">Idade </label>
+                <output id="iidade">0</output>
+               
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar" >
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+    <script>
+        function calIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+
+</body>
+</html>
