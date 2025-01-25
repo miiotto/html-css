@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* Conf Gerais  em pe*/
+
+body {
+    background: url(../../imagens/cev-portrait.jpg);
+    background-position: center bottom;
+}
