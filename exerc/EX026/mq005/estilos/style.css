@@ -46,6 +46,8 @@ menu > ul {
 menu > ul > li > a {
     display: block;
     padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     text-decoration: none;
     text-align: center;
     background-color: rgb(86, 86, 86);
